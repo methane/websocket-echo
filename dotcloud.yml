@@ -1,0 +1,7 @@
+www:
+    type: custom
+    buildscript: builder
+    processes:
+        app: /home/dotcloud/env/bin/python wsecho.py --port=$PORT_WWW
+    ports:
+        www: http
